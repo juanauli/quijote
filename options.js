@@ -5,7 +5,7 @@ function save_options() {
   const rightClickWiki = document.getElementById('right-click-wiki').checked;
   const rightClickGt = document.getElementById('right-click-gt').checked;
   chrome.storage.sync.set({
-    // preferredSearch: searchType,
+    preferredSearch: searchType,
     rightClickRae: rightClickRae,
     rightClickWiki: rightClickWiki,
     rightClickGt: rightClickGt
