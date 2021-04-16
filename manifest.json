@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Quixote",
+  "version": "1.0.0",
+  "description": "Translate to and search in Spanish",
+  "author": "Juan S. Auli",
+  "icons": {
+    "16": "/images/16.png",
+    "32": "/images/32.png",
+    "64": "/images/64.png",
+    "128": "/images/128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/16.png",
+      "32": "/images/32.png",
+      "64": "/images/64.png",
+      "128": "/images/128.png"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "storage"
+  ]
+}

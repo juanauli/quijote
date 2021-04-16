@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quixote Options</title>
+    <link rel="stylesheet" type="text/css" href="/styles/options.css">
+  </head>
+  <body>
+    <div id="header-top-container">
+      <img src="/images/64.png" alt="" width="50px" height="50px"/>
+      <h1>Quixote Options</h1>
+    </div>
+
+    <div class="header-container">
+      <img src="/images/search.png" alt="" width="30px" height="30px"/>
+      <h2>Preferred search</h2>
+    </div>
+    <select id="search-type">
+    <option value="rae">RAE</option>
+    <option value="wiki">Wikipedia</option>
+    <option value="gt">Google Translate</option>
+    </select>
+
+
+    <div class="header-container">
+      <img src="/images/mouse-right-click.png" alt="" width="30px" height="30px"/>
+      <h2>Enable on right click</h2>
+    </div>
+    <label>
+      <input type="checkbox" id="right-click-rae">
+      RAE
+    </label>
+    <label>
+      <input type="checkbox" id="right-click-wiki">
+      Wikipedia
+    </label>
+    <label>
+      <input type="checkbox" id="right-click-gt">
+      Google Translate
+    </label>
+
+    <div id="status"></div>
+    <button id="save">Save</button>
+
+    <script type="text/javascript" src="options.js"></script>
+  </body>
+</html>
