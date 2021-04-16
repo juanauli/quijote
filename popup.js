@@ -47,9 +47,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-//set preferred search according to user preferred options
+//set preferred search according to user preferred options (on loading)
+
 chrome.storage.sync.get(["preferredSearch"], function(result) {
   const searchTypeId = `radio-${result.preferredSearch}`;
   const selectedSearchElement = document.getElementById(searchTypeId);
   selectedSearchElement.checked = true;
 });
+

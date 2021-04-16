@@ -77,7 +77,7 @@ chrome.storage.sync.get([ITEM_RAE, ITEM_WIKIPEDIA, ITEM_GOOGLE_TRANSLATE], funct
 // attach functionality to context menu
 chrome.contextMenus.onClicked.addListener(rightClickTool)
 
-// update context menus available depending on user optioons
+// update context menus available depending on user options
 chrome.storage.onChanged.addListener(function (changes, namespace) {
   for (let [key, { oldValue, newValue }] of Object.entries(changes)) {
     if (typeof newValue === "boolean") {
