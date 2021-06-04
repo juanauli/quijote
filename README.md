@@ -1,5 +1,5 @@
 // Quixote
-Description: Translate to, search in and spellcheck Spanish
+Description: Translate into, search in and spellcheck Spanish.
 
 Author: Juan S. Auli
 
